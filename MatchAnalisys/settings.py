@@ -99,8 +99,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'matchanalysis',
         'USER': 'root',
-        'PASSWORD': 'lucamuna',
-        # 'PASSWORD': 'root',
+        #'PASSWORD': 'lucamuna',
+        'PASSWORD': 'root',
         'HOST': 'localhost',
         'PORT': '3306',
     }
