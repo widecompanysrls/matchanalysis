@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    {% load static %}
+    {#    <link rel="stylesheet" href="{% static 'css/create_session.css?'%}"/>#}
+    <link rel="stylesheet" href="{% static 'css/create_session.css' %}"/>
+    <title>NewSession</title>
+    {% load static %}
+    <script src="{% static 'js/create_session.js' %}"></script>
+    <link rel="shortcut icon" href="{% static 'assets/wide.ico' %}" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+</head>
+<body class="body">
+<header style="display: flex;justify-content: space-between">
+    <div style="margin-top: 1vw">
+{#        <a style="text-decoration: none;color: #0b84ff;" href="{% url 'index' %}">#}
+{#            <span style="font-size: 12vw" class="material-icons">keyboard_arrow_left</span>#}
+{#        </a>#}
+    </div>
+    <div style="margin-right: 3vw;margin-top: 1vw">
+        <a style="text-decoration: none;color: #0A84FF;font-size: 7vw" href="{% url 'index' %}">Home</a>
+    </div>
+</header>
+<div class="img_head">
+    <div>
+        <img style="width: 10vw;max-width: 10vw" src="{% static 'assets/logo_viola.png' %}">
+    </div>
+    <div>
+        <img style="width: 40vw;max-width: 40vw" src="{% static 'assets/logo.png' %}">
+    </div>
+</div>
+{#<div class="session_div">#}
+{#    <div class="id_session_div">#}
+{#        <label style="font-size: 4vw;color: #5F00FF">ID Session:</label><br>#}
+{#        <span class="input" role="textbox" contenteditable="true"#}
+{#              style="color: #5F00FF;font-size: 4vw;width: 100%;border-bottom: 1px solid"#}
+{#              id="clipboard">{{ session }}</span>#}
+{#    </div>#}
+{#    <div class="id_session_btn">#}
+{#        <button class="myButtonClipboard" onclick="CopyToClipboard()">Copy</button>#}
+{#    </div>#}
+{#    <button class="myButtonClipboard" onclick="CopyToClipboard()">Copy</button>#}
+{#</div>#}
+{#<div class="session_div_clipboard" id="clipboard_copied">#}
+{#    <label>Id session copied!</label>#}
+{#</div>#}
+<div class="grid2x2">
+    <div class="box box1">
+        <div><label style="color: #5F00FF;font-size: 4vw;width: 80vw">ID Session:</label></div>
+    </div>
+    <div class="box box2">
+        <div>
+            <button class="myButtonClipboard" onclick="CopyToClipboard()">Copy</button>
+        </div>
+    </div>
+    <div class="box box3">
+        <div>
+            <span class="input" role="textbox" contenteditable="true"
+                  style="color: #5F00FF;font-size:4vw;width: 80vw;display: inline-block"
+                  id="clipboard">{{ session }}</span>
+        </div>
+    </div>
+    <div class="box box4">
+        <div>
+            <div class="session_div_clipboard" id="clipboard_copied">
+                <label>Copied!</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dot_div">
+    <span class="dot_filled"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<div class="form_div">
+    <form method="post" action="{% url 'create_room' %}">
+        {% csrf_token %}
+        <div id="form_name_div">
+            {{ SessionForm.Nome }}
+
+        </div>
+        <div class="form_psw_div">
+            {{ SessionForm.Password }}
+            <i style="font-size: 6vw" class="material-icons" onclick="show_hide_psw()">visibility</i>
+        </div>
+        <input type="hidden" name="session_id" id="session_id">
+        <button class="myButton" type="submit">Next</button>
+    </form>
+</div>
+
+</body>
+
+</html>

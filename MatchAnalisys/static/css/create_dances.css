@@ -1,0 +1,323 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: white;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+    font-size: 4vw;
+    text-align: left;
+    margin-left: 2vw;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+    font-size: 4vw;
+    text-align: left;
+    margin-left: 2vw;
+
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+    font-size: 4vw;
+    text-align: left;
+    margin-left: 2vw;
+
+}
+
+
+.footer {
+    background-color: red;
+}
+
+.img_head {
+    text-align: center;
+    width: 100vw;
+    height: fit-content;
+    margin-top: -5vw;
+}
+
+.session_div {
+    text-align: left;
+    margin-left: 2vw;
+    margin-top: 2vw;
+}
+
+.id_session_div {
+    float: left;
+    font-size: 5vw;
+}
+
+.id_session_btn {
+    margin-right: 5vw;
+    height: fit-content;
+}
+
+.session_div_clipboard {
+    /*clear: both;*/
+    text-align: right;
+    /*position: absolute;*/
+    color: #0A84FF;
+    font-style: italic;
+    font-size: 4vw;
+    /*margin: 8vw auto 0 78vw;*/
+    /*margin-left: 22vw;*/
+    /*margin-top: 13vw;*/
+    display: none;
+    /*height: 10vw;*/
+}
+
+
+.myButtonClipboard {
+    background-color: transparent;
+    border-radius: 3vw;
+    border: 1px solid #0A84FF;
+    display: inline-block;
+    cursor: pointer;
+    color: #0A84FF;
+    font-size: 4vw;
+    padding: 3px 10px;
+    text-decoration: none;
+    float: right
+}
+
+.dot_div {
+    position: relative;
+    height: 20vw;
+    clear: both;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.dot {
+    margin-top: 10vw;
+    height: 3vw;
+    width: 3vw;
+    background-color: #a9bad5;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_filled {
+    height: 3vw;
+    width: 3vw;
+    background-color: #0A84FF;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+.add_dance_div {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .add_dance_div {
+        position: relative;
+        bottom: 0;
+        /*text-align: center;*/
+        width: 100%;
+
+    }
+}
+
+.form_div {
+    margin-top: 10vw;
+    text-align: center;
+    display: flex;
+    vertical-align: center;
+    horiz-align: center;
+    align-items: center;
+
+}
+
+.DanceForm {
+    background-color: #5F00FF;
+    font-size: 5vw;
+    color: white;
+    width: 70vw;
+    /*border-radius: 7px;*/
+    border: 0;
+    border-radius: 7px;
+    height: 15vw;
+    align-items: center;
+    horiz-align: center;
+    vertical-align: center;
+    margin: auto 3vw;
+}
+
+
+.myButton {
+    background-color: transparent;
+    border-radius: 7px;
+    border: 3px solid #5F00FF;
+    display: flex;
+    cursor: pointer;
+    color: #5F00FF;
+    font-size: 5vw;
+}
+
+.myButton:hover {
+    background-color: #0A84FF;
+    color: white;
+}
+
+.select_div {
+    text-align: center;
+    display: flex;
+    vertical-align: center;
+    horiz-align: center;
+    align-items: center;
+}
+
+/*.select_delete {*/
+/*    font-size: 5vw;*/
+/*    !*color: white;*!*/
+/*    width: 70vw;*/
+/*    border: 0;*/
+/*    border-radius: 7px;*/
+/*    height: 9vw;*/
+/*    align-items: center;*/
+/*    horiz-align: center;*/
+/*    vertical-align: center;*/
+/*    margin: auto 3vw;*/
+/*    text-indent: 1px;*/
+/*    text-overflow: '';*/
+/*    -webkit-appearance: none;*/
+/*    -moz-appearance: none;*/
+/*    appearance: none;*/
+/*    padding: 2px 2px 2px 2px;*/
+/*    border: none;*/
+/*    background-color: #5F00FF;*/
+/*}*/
+
+.select-css {
+    display: block;
+    font-size: 5vw;
+    color: white;
+    width: 70vw;
+    height: 9vw;
+    box-sizing: border-box;
+    margin: auto 3vw;
+    border-radius: 7px;
+    /*border: 1px solid #0A84FF;*/
+    /*box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);*/
+    /*border-radius: .5em;*/
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    /*background-color: #5F00FF;*/
+    background: #5F00FF url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='24' height='24' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' fill='white'/></g></svg>") no-repeat top right;
+    /*background-image: background-repeat: no-repeat, repeat;*/
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+
+.select-css::-ms-expand {
+    display: none;
+}
+
+.select-css:hover {
+    border-color: #888;
+}
+
+.select-css:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px black;
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+}
+
+.select-css option {
+    font-weight: normal;
+}
+
+/*llllll*/
+.form_next {
+    width: 100%;
+    text-align: center;
+}
+
+.myButtonNext {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 3px solid #0A84FF;
+    display: inline-block;
+    cursor: pointer;
+    color: #0A84FF;
+    width: 95vw;
+    font-size: 5vw;
+    padding: 2vw 7vw;
+    text-decoration: none;
+    -moz-appearance: none;
+
+
+}
+
+.material-icons.delete {
+    font-size: 10vw;
+    color: #5F00FF;
+    margin-left: 3vw;
+}
+
+
+.grid2x2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.grid2x2 > div {
+    display: flex;
+    flex-basis: 15vw;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grid2x2 > div > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.box {
+
+}
+
+.box1 {
+    /*background-color: red;*/
+}
+
+.box2 {
+    /*background-color: orange;*/
+}
+
+.box3 {
+    /*background-color: purple;*/
+    border-bottom: 2px solid #5F00FF;
+}
+
+.box4 {
+    /*background-color: grey;*/
+    border-bottom: 2px solid #5F00FF;
+
+}
+
