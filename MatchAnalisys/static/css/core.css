@@ -1,0 +1,265 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+    background: white no-repeat fixed;
+}
+
+.scrollable {
+    position: inherit;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #5F00FF;
+    opacity: 1; /* Firefox */
+    font-size: 4vw;
+    text-align: left;
+    margin-left: 2vw;
+    horiz-align: center;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #5F00FF;
+    font-size: 4vw;
+    text-align: left;
+    margin-left: 2vw;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #5F00FF;
+    font-size: 4vw;
+    text-align: left;
+    margin-left: 2vw;
+
+}
+
+
+.footer {
+    background-color: red;
+}
+
+.myButton {
+    /*background: linear-gradient(to bottom, #5a7cb0 5%, #1f3351 100%);*/
+    /*background-color: #5a7cb0;*/
+    /*border-radius: 15vw;*/
+    /*border: 1px solid #1f3351;*/
+    /*display: inline-block;*/
+    /*cursor: pointer;*/
+    /*color: #ffffff;*/
+    /*font-family: Arial;*/
+    /*font-size: 6vw;*/
+    /*padding: 2vw 7vw;*/
+    /*text-decoration: none;*/
+    /*margin: 0 auto;*/
+    background-color: transparent;
+    border-radius: 5px;
+    border: 3px solid #0A84FF;
+    cursor: pointer;
+    color: #0A84FF;
+    font-size: 6vw;
+    padding: 2vw 7vw;
+    text-decoration: none;
+    -moz-appearance: none;
+    text-align: center;
+    margin-top: 5vw;
+    overflow: hidden;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #1f3351 5%, #5a7cb0 100%);
+    background-color: #1f3351;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.DanceForm {
+    background-color: #ff5855;
+    width: 50%;
+    font-size: 5vw;
+    color: white;
+}
+
+.myButtonDelete {
+    background: linear-gradient(to bottom, #5a7cb0 5%, #1f3351 100%);
+    background-color: #5a7cb0;
+    border-radius: 1vw;
+    border: 1px solid #1f3351;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 5vw;
+    padding: 0vw 1vw;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.myButtonDelete:hover {
+    background: linear-gradient(to bottom, #1f3351 5%, #5a7cb0 100%);
+    background-color: #1f3351;
+}
+
+.myButtonDelete:active {
+    position: relative;
+    top: 1px;
+}
+
+.myButtonClipboard {
+    /*background: linear-gradient(to bottom, #5a7cb0 15%, #1f3351 100%);*/
+    /*background-color: #5a7cb0;*/
+    border-radius: 3vw;
+    border: 1px solid #1f3351;
+    display: inline-block;
+    cursor: pointer;
+    color: #1f3351;
+    font-size: 4vw;
+    padding: 2vw 3vw;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.column {
+    font-size: 3vw;
+    margin: auto;
+}
+
+.couples_button {
+    font-size: 5vw;
+    width: 25vw;
+    height: 8vw;
+    margin: 1vw 1vw;
+    display: inline-block;
+    border-radius: 1vw;
+    background-color: rgba(10, 18, 180, 0.89);
+    color: white;
+}
+
+.manage_heats_button {
+    font-size: 3vw;
+    border-radius: 1vw;
+    padding: 2vw 5vw;
+    border: 5px solid #0A84FF;
+    background-color: white;
+    color: #0A84FF;
+}
+
+.float_votes_button {
+    font-size: 4vw;
+    width: 15vw;
+    height: 8vw;
+    border: none;
+    -webkit-appearance: none;
+    border-radius: 2vw;
+    background-color: #5a7cb0;
+    color: white;
+    font-weight: bold;
+
+}
+
+.param_name_button {
+    font-size: 3vw;
+    padding: 2vw 13vw;
+    background-color: white;
+}
+
+.votes_button {
+    font-size: 4vw;
+    background-color: #5a7cb0;
+    border: none;
+    -webkit-appearance: none;
+    width: 15vw;
+    height: 10vw;
+    border-radius: 3vw;
+    margin-top: 1vw;
+    color: white;
+    font-weight: bold;
+}
+
+.slick-next, .slick-prev {
+    font-size: 2vw;
+    padding: 2vw 5vw;
+    margin: 1vw 15vw;
+}
+
+.slick-next:after {
+    content: ' >';
+}
+
+.slick-prev:before {
+    content: '< ';
+}
+
+.section {
+    text-align: center;
+}
+
+
+.select-css {
+    /*display: block;*/
+    font-size: 5vw;
+    color: white;
+    width: 70vw;
+    height: 9vw;
+    box-sizing: border-box;
+    margin: auto 3vw;
+    border-radius: 7px;
+    /*border: 1px solid #0A84FF;*/
+    /*box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);*/
+    /*border-radius: .5em;*/
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    /*background-color: #5F00FF;*/
+    background: #5F00FF url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='24' height='24' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' fill='white'/></g></svg>") no-repeat top right;
+    /*background-image: background-repeat: no-repeat, repeat;*/
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+
+.select-css::-ms-expand {
+    display: none;
+}
+
+.select-css:hover {
+    border-color: #888;
+}
+
+.select-css:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px black;
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+}
+
+.select-css option {
+    font-weight: normal;
+}
+
+.buttonClearVote {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 3px solid #0A84FF;
+    cursor: pointer;
+    color: #0A84FF;
+    font-size: 3vw;
+    padding: 1vw 40vw;
+    text-decoration: none;
+    -moz-appearance: none;
+    text-align: center;
+    margin-top: 2vw;
+    margin-left: 3vw;
+    overflow: hidden;
+}
